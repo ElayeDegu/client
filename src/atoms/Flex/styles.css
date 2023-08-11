@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    flex: 0.001;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .flex-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+    .flex-item {
+      flex-basis: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 1001px) {
+    .flex-item {
+      flex-basis: 35%;
+    }
+  }
+  
